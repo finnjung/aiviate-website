@@ -83,6 +83,8 @@ window.addEventListener('scroll', () => {
     if (window.scrollY >= section.offsetTop - 100) current = section.id;
   });
   navLinks.forEach(link => {
-    link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--blue)' : '';
+    if (!link.classList.contains('btn')) {
+      link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--blue)' : '';
+    }
   });
 }, { passive: true });

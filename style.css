@@ -870,7 +870,7 @@ body {
   color: var(--gray-400);
   padding: 64px 0 32px;
 }
-.footer .nav__logo { margin-bottom: 12px; display: inline-block; }
+.footer .nav__logo { margin-bottom: 12px; display: inline-flex; }
 .footer .logo-viate { color: #fff; }
 
 .footer__top {

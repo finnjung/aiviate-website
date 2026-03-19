@@ -37,49 +37,86 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero__bg-glow"></div>
     <div class="hero__bg-grid"></div>
-    <div class="container">
-      <div class="hero__layout">
 
-        <!-- LEFT: Text -->
-        <div class="hero__text">
-          <div class="hero__badge">KI-Automatisierung für den Mittelstand</div>
-          <h1 class="hero__title">
-            Mehr Effizienz.<br />
-            Weniger Aufwand.<br />
-            <span class="gradient-text">Mit KI.</span>
-          </h1>
-          <p class="hero__sub">
-            Aiviate transformiert mittelständische Unternehmen durch maßgeschneiderte KI-Automatisierungen –
-            schnell einsetzbar, messbar wirksam und ohne IT-Abteilung.
-          </p>
-          <div class="hero__actions">
-            <a href="#kontakt" class="btn btn--primary btn--lg">Kostenlos beraten lassen</a>
-            <a href="#prozess" class="btn btn--ghost btn--lg">So funktioniert's</a>
-          </div>
-          <div class="hero__stats">
-            <div class="stat">
-              <span class="stat__num">74%</span>
-              <span class="stat__label">weniger manuelle Arbeit</span>
-            </div>
-            <div class="stat__divider"></div>
-            <div class="stat">
-              <span class="stat__num">3×</span>
-              <span class="stat__label">schnellere Prozesse</span>
-            </div>
-            <div class="stat__divider"></div>
-            <div class="stat">
-              <span class="stat__num">4 Wo.</span>
-              <span class="stat__label">bis zur ersten Automatisierung</span>
+    <div class="container hero__container">
+
+      <!-- Top: centered copy -->
+      <div class="hero__copy">
+        <a href="#leistungen" class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          KI-Automatisierung für den Mittelstand
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+
+        <h1 class="hero__title">
+          Weniger Aufwand.<br />Mehr Ergebnis.<br />
+          <span class="gradient-text">Dank KI.</span>
+        </h1>
+
+        <p class="hero__sub">
+          Aiviate automatisiert repetitive Prozesse im Mittelstand –
+          messbar wirksam, in 4 Wochen live, ohne eigene IT.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#kontakt" class="btn btn--primary btn--lg">Kostenlos beraten lassen</a>
+          <a href="#prozess" class="btn btn--ghost btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+            So funktioniert's
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom: video showcase -->
+      <div class="hero__showcase">
+
+        <!-- Floating badges -->
+        <div class="hero__float hero__float--tl">
+          <div class="float-badge">
+            <span class="float-badge__icon float-badge__icon--green">↓</span>
+            <div>
+              <div class="float-badge__val">74%</div>
+              <div class="float-badge__lbl">weniger manuelle Arbeit</div>
             </div>
           </div>
         </div>
 
-        <!-- RIGHT: Video -->
-        <div class="hero__visual">
-          <div class="hero__video-wrap">
+        <div class="hero__float hero__float--tr">
+          <div class="float-badge">
+            <span class="float-badge__icon float-badge__icon--blue">⚡</span>
+            <div>
+              <div class="float-badge__val">4 Wochen</div>
+              <div class="float-badge__lbl">bis zur ersten Lösung</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__float hero__float--bl">
+          <div class="float-badge float-badge--sm">
+            <span class="float-badge__dot float-badge__dot--green"></span>
+            DSGVO-konform
+          </div>
+        </div>
+
+        <div class="hero__float hero__float--br">
+          <div class="float-badge float-badge--sm">
+            <span class="float-badge__dot float-badge__dot--blue"></span>
+            3× schnellere Prozesse
+          </div>
+        </div>
+
+        <!-- Browser frame -->
+        <div class="hero__browser">
+          <div class="hero__browser-bar">
+            <span class="browser-dot" style="background:#FF5F57"></span>
+            <span class="browser-dot" style="background:#FEBC2E"></span>
+            <span class="browser-dot" style="background:#28C840"></span>
+            <div class="browser-url">aiviate.de/dashboard</div>
+          </div>
+          <div class="hero__browser-body">
             <video
-              class="hero__video"
               src="hero.mp4"
               autoplay
               loop
@@ -87,13 +124,14 @@
               playsinline
               preload="auto"
             ></video>
-            <!-- Glow orbs -->
-            <div class="hero__orb hero__orb--blue"></div>
-            <div class="hero__orb hero__orb--green"></div>
           </div>
         </div>
 
+        <!-- Glow behind frame -->
+        <div class="hero__glow-blue"></div>
+        <div class="hero__glow-green"></div>
       </div>
+
     </div>
   </section>
 

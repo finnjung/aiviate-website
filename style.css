@@ -859,7 +859,8 @@ body {
 }
 .contact__item:last-child { border-bottom: none; }
 .contact__icon {
-  font-size: 1rem;
+  display: flex;
+  align-items: center;
   color: var(--blue);
   flex-shrink: 0;
 }

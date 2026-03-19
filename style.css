@@ -168,6 +168,8 @@ body {
   transition: color var(--transition);
 }
 .nav__links a:hover { color: var(--blue); }
+.nav__links a.btn--primary { color: #fff; }
+.nav__links a.btn--primary:hover { color: #fff; }
 
 .nav__burger {
   display: none;

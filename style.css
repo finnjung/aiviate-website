@@ -132,11 +132,26 @@ body {
 }
 
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   font-size: 1.5rem;
   font-weight: 800;
   text-decoration: none;
   letter-spacing: -0.5px;
 }
+.nav__logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.nav__logo-img--footer {
+  height: 36px;
+  /* On dark footer bg, invert doesn't work since it has its own gradient colors */
+  filter: brightness(1.1);
+}
+.logo-wordmark { display: flex; }
 .logo-ai    { color: var(--blue); }
 .logo-viate { color: var(--gray-900); }
 

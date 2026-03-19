@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiviate – KI-Automatisierung für den Mittelstand</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-ai">Ai</span><span class="logo-viate">viate</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#prozess">Prozess</a></li>
+        <li><a href="#vorteile">Vorteile</a></li>
+        <li><a href="#kontakt" class="btn btn--sm btn--primary">Beratung anfragen</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#prozess">Prozess</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#kontakt">Beratung anfragen</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="container">
+      <div class="hero__badge">KI-Automatisierung für den Mittelstand</div>
+      <h1 class="hero__title">
+        Mehr Effizienz.<br />
+        Weniger Aufwand.<br />
+        <span class="gradient-text">Mit KI.</span>
+      </h1>
+      <p class="hero__sub">
+        Aiviate transformiert mittelständische Unternehmen durch maßgeschneiderte KI-Automatisierungen –
+        schnell einsetzbar, messbar wirksam und ohne IT-Abteilung.
+      </p>
+      <div class="hero__actions">
+        <a href="#kontakt" class="btn btn--primary btn--lg">Kostenlos beraten lassen</a>
+        <a href="#prozess" class="btn btn--ghost btn--lg">So funktioniert's</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">74%</span>
+          <span class="stat__label">weniger manuelle Arbeit</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">3×</span>
+          <span class="stat__label">schnellere Prozesse</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">4 Wo.</span>
+          <span class="stat__label">bis zur ersten Automatisierung</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / TRUST -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust__label">Vertrauen von Unternehmen aus dem DACH-Raum</p>
+      <div class="trust__logos">
+        <span class="trust__logo">Metallbau GmbH</span>
+        <span class="trust__logo">LogiTrans AG</span>
+        <span class="trust__logo">MedTech Solutions</span>
+        <span class="trust__logo">Handwerk Digital</span>
+        <span class="trust__logo">Finanz Pro KG</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section class="section" id="leistungen">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Leistungen</span>
+        <h2>Was wir für Sie automatisieren</h2>
+        <p>Von der Idee bis zur fertigen Lösung – wir decken die häufigsten Engpässe im Mittelstand ab.</p>
+      </div>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card__icon" style="background: #EFF6FF;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Kundenkommunikation</h3>
+          <p>KI-gestützte E-Mail-Bearbeitung, automatische Antworten und intelligentes Ticket-Routing – rund um die Uhr.</p>
+          <ul class="card__list">
+            <li>E-Mail-Klassifizierung & Routing</li>
+            <li>Automatische Erstantworten</li>
+            <li>CRM-Integration</li>
+          </ul>
+        </div>
+
+        <div class="card card--highlighted">
+          <div class="card__badge">Beliebteste Lösung</div>
+          <div class="card__icon" style="background: rgba(0,208,132,0.12);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Dokumenten&shy;verarbeitung</h3>
+          <p>Rechnungen, Lieferscheine und Verträge werden automatisch ausgelesen, geprüft und ins ERP übertragen.</p>
+          <ul class="card__list">
+            <li>OCR & Datenextraktion</li>
+            <li>ERP/SAP-Anbindung</li>
+            <li>Fehler-Erkennung & Alerts</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon" style="background: #EFF6FF;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Reporting & Analytics</h3>
+          <p>Automatisierte Berichte, Dashboards und KPI-Analysen – täglich in Ihr Postfach ohne manuellen Aufwand.</p>
+          <ul class="card__list">
+            <li>Automatische Tagesberichte</li>
+            <li>KPI-Dashboards</li>
+            <li>Anomalie-Erkennung</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon" style="background: rgba(0,208,132,0.08);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93A10 10 0 1 0 4.93 19.07"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+          </div>
+          <h3>Prozess&shy;automatisierung</h3>
+          <p>Repetitive Aufgaben in Einkauf, HR, Logistik oder Vertrieb werden zuverlässig und fehlerfrei automatisiert.</p>
+          <ul class="card__list">
+            <li>Workflow-Automatisierung</li>
+            <li>System-Integrationen (API)</li>
+            <li>Monitoring & Logging</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon" style="background: #EFF6FF;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>KI-Assistent für Mitarbeiter</h3>
+          <p>Ihr eigener ChatGPT – trainiert auf Ihre Daten, Ihre Produkte und Ihre Prozesse. Sicher und DSGVO-konform.</p>
+          <ul class="card__list">
+            <li>Individuell trainiertes Modell</li>
+            <li>DSGVO-konform & on-premise</li>
+            <li>Slack/Teams-Integration</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__icon" style="background: rgba(0,208,132,0.08);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D084" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Beratung & Strategie</h3>
+          <p>Noch nicht sicher, wo Sie anfangen sollen? Wir analysieren Ihre Prozesse und erstellen einen klaren Automatisierungs-Fahrplan.</p>
+          <ul class="card__list">
+            <li>Prozess-Analyse & Audit</li>
+            <li>ROI-Kalkulation</li>
+            <li>Priorisierter Fahrplan</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROZESS -->
+  <section class="section section--gray" id="prozess">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Unser Prozess</span>
+        <h2>Von 0 zur fertigen Automatisierung in 4 Wochen</h2>
+        <p>Kein langer Einführungsprojekt. Kein Wasserfallmodell. Ergebnisse statt Präsentationen.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3>Analyse & Entdeckung</h3>
+            <p>Wir lernen Ihre Prozesse kennen, identifizieren die größten Engpässe und berechnen das Einsparpotenzial.</p>
+            <span class="step__time">Woche 1</span>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3>Design & Architektur</h3>
+            <p>Wir entwerfen die Automatisierungslösung, wählen die passenden KI-Modelle und planen die Integration.</p>
+            <span class="step__time">Woche 2</span>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3>Entwicklung & Test</h3>
+            <p>Umsetzung, Tests mit Ihren Realdaten und iteratives Feintuning bis alles zuverlässig läuft.</p>
+            <span class="step__time">Woche 3</span>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__content">
+            <h3>Rollout & Begleitung</h3>
+            <p>Go-live, Mitarbeiter-Onboarding und 3 Monate Support inklusive – damit nichts schief gehen kann.</p>
+            <span class="step__time">Woche 4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VORTEILE -->
+  <section class="section" id="vorteile">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Warum Aiviate</span>
+        <h2>Gemacht für den Mittelstand</h2>
+        <p>Keine Enterprise-Komplexität. Keine überladenen Plattformen. Nur das, was wirklich wirkt.</p>
+      </div>
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>Kein IT-Team nötig</h4>
+            <p>Wir übernehmen Entwicklung, Betrieb und Wartung. Ihre Mitarbeiter müssen nichts Technisches wissen.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>Fixpreis & volle Transparenz</h4>
+            <p>Kein Stundensatz-Chaos. Sie wissen vorher genau, was es kostet und was Sie dafür bekommen.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>DSGVO-konform</h4>
+            <p>Alle Lösungen sind datenschutzkonform und auf Wunsch vollständig on-premise betreibbar.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>Integration in bestehende Systeme</h4>
+            <p>Wir verbinden uns mit Ihrem ERP, CRM, Dokumenten-System oder jeder anderen Software via API.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>Messbare Ergebnisse</h4>
+            <p>Für jede Automatisierung definieren wir gemeinsam KPIs – und liefern Ihnen monatliche Reports.</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">✓</div>
+          <div>
+            <h4>Schneller Start</h4>
+            <p>Erste Automatisierung live in 4 Wochen. Kein 6-Monats-Projekt, kein Berater-Marathon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Bereit, Ihre Prozesse zu transformieren?</h2>
+      <p>In einem kostenlosen 30-Minuten-Gespräch analysieren wir gemeinsam, wo KI bei Ihnen den größten Hebel hat.</p>
+      <a href="#kontakt" class="btn btn--white btn--lg">Jetzt kostenloses Gespräch buchen</a>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Kontakt</span>
+        <h2>Lassen Sie uns sprechen</h2>
+        <p>Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+      </div>
+      <div class="contact">
+        <form class="contact__form" id="contactForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Ihr Name *</label>
+              <input type="text" id="name" name="name" placeholder="Max Mustermann" required />
+            </div>
+            <div class="form__group">
+              <label for="company">Unternehmen *</label>
+              <input type="text" id="company" name="company" placeholder="Mustermann GmbH" required />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" placeholder="max@mustermann.de" required />
+            </div>
+            <div class="form__group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+49 123 456789" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="interest">Interesse</label>
+            <select id="interest" name="interest">
+              <option value="">Bitte wählen...</option>
+              <option>Kundenkommunikation automatisieren</option>
+              <option>Dokumentenverarbeitung</option>
+              <option>Reporting & Analytics</option>
+              <option>Prozessautomatisierung</option>
+              <option>KI-Assistent für Mitarbeiter</option>
+              <option>Beratung & Strategieplanung</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" placeholder="Was möchten Sie automatisieren? Was sind Ihre größten Herausforderungen?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Anfrage absenden →</button>
+          <p class="form__note">* Pflichtfelder. Keine Weitergabe an Dritte. DSGVO-konform.</p>
+        </form>
+        <div class="contact__info">
+          <div class="contact__card">
+            <h3>Direkter Kontakt</h3>
+            <div class="contact__item">
+              <span class="contact__icon">✉</span>
+              <span>hallo@aiviate.de</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">☎</span>
+              <span>+49 (0) 123 456 789</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">⏰</span>
+              <span>Mo–Fr, 9–18 Uhr</span>
+            </div>
+          </div>
+          <div class="contact__card contact__card--highlight">
+            <h3>Kostenloses Erstgespräch</h3>
+            <p>30 Minuten. Keine Kosten. Kein Verkaufsdruck.</p>
+            <p>Wir analysieren Ihre Situation und zeigen Ihnen konkret, welche Automatisierungen den größten ROI bringen.</p>
+            <a href="#kontakt" class="btn btn--primary" style="margin-top:1rem;display:inline-block;">Termin buchen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <span class="logo-ai">Ai</span><span class="logo-viate">viate</span>
+          </a>
+          <p>KI-Automatisierung für den Mittelstand.<br />Messbar. Schnell. Ohne Overhead.</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <h4>Leistungen</h4>
+            <ul>
+              <li><a href="#leistungen">Kundenkommunikation</a></li>
+              <li><a href="#leistungen">Dokumentenverarbeitung</a></li>
+              <li><a href="#leistungen">Reporting & Analytics</a></li>
+              <li><a href="#leistungen">Prozessautomatisierung</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Unternehmen</h4>
+            <ul>
+              <li><a href="#prozess">Unser Prozess</a></li>
+              <li><a href="#vorteile">Warum Aiviate</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Rechtliches</h4>
+            <ul>
+              <li><a href="#">Impressum</a></li>
+              <li><a href="#">Datenschutz</a></li>
+              <li><a href="#">AGB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Aiviate. Alle Rechte vorbehalten.</p>
+        <p>Made with ♥ in Deutschland</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

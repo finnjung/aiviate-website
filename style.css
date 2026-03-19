@@ -141,14 +141,13 @@ body {
   letter-spacing: -0.5px;
 }
 .nav__logo-img {
-  height: 32px;
+  height: 40px;
   width: auto;
   display: block;
   flex-shrink: 0;
 }
 .nav__logo-img--footer {
-  height: 36px;
-  /* On dark footer bg, invert doesn't work since it has its own gradient colors */
+  height: 48px;
   filter: brightness(1.1);
 }
 .logo-wordmark { display: flex; }

@@ -12,12 +12,18 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 burger.addEventListener('click', () => {
-  menu.classList.toggle('open');
+  const isOpen = menu.classList.toggle('open');
+  burger.classList.toggle('open', isOpen);
+  burger.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
 });
 
 // Close mobile menu on link click
 menu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => menu.classList.remove('open'));
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-label', 'Menü öffnen');
+  });
 });
 
 // --- SCROLL REVEAL ---

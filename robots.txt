@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /legal/
+
+Sitemap: https://aiviate.de/sitemap.xml

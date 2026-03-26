@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE}} – Aiviate</title>
+  <meta name="description" content="{{DESCRIPTION}}" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/blog/blog.css" />
+  <link rel="icon" href="/assets/images/logo/aiviate-logo.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://aiviate.de/blog/{{SLUG}}/" />
+  <meta property="og:title" content="{{TITLE}} – Aiviate" />
+  <meta property="og:description" content="{{DESCRIPTION}}" />
+  <meta property="og:url" content="https://aiviate.de/blog/{{SLUG}}/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Aiviate" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{TITLE}}",
+    "description": "{{DESCRIPTION}}",
+    "datePublished": "{{DATE}}",
+    "author": { "@type": "Organization", "name": "Aiviate" },
+    "publisher": { "@type": "Organization", "name": "Aiviate", "url": "https://aiviate.de/" },
+    "mainEntityOfPage": "https://aiviate.de/blog/{{SLUG}}/"
+  }
+  </script>
+  {{FAQ_JSONLD}}
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="/assets/images/logo/aiviate-logo.svg" alt="Aiviate" class="nav__logo-img" />
+        <span class="logo-viate">viate</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/#leistungen">Leistungen</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#kontakt" class="btn btn--sm btn--primary">Beratung anfragen</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ARTICLE -->
+  <article class="post">
+    <div class="post__header">
+      <a href="/blog/" class="post__back">← Zurück zum Blog</a>
+      <span class="post__cat">{{CATEGORY}}</span>
+      <h1 class="post__title">{{TITLE}}</h1>
+      <time class="post__date" datetime="{{DATE}}">{{DATE_FORMATTED}}</time>
+    </div>
+    <div class="post__body">
+      {{CONTENT}}
+    </div>
+    {{FAQ}}
+  </article>
+
+  <!-- CTA -->
+  <section class="post-cta">
+    <div class="container">
+      <h2>Klingt interessant?</h2>
+      <p>Lass uns in einem kurzen Gespräch herausfinden, welche Prozesse wir bei dir automatisieren können.</p>
+      <a href="/#kontakt" class="btn btn--primary btn--lg">Kostenlos beraten lassen</a>
+    </div>
+  </section>
+
+  <!-- FOOTER (minimal) -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Aiviate GbR</span>
+      <nav>
+        <a href="/legal/impressum.html">Impressum</a>
+        <a href="/legal/datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

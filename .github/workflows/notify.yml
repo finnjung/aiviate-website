@@ -1,0 +1,26 @@
+name: Telegram Notification after Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'blog/posts/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Telegram Notification
+        run: |
+          SLUG=$(git diff HEAD~1 --name-only | grep "^blog/posts/" | head -1 | sed 's|blog/posts/||;s|\.json||')
+          if [ -n "$SLUG" ]; then
+            TITLE=$(cat blog/posts/$SLUG.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('title',''))")
+            WORDS=$(cat blog/posts/$SLUG.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d.get('content','').split()))")
+            curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+              -H "Content-Type: application/json" \
+              -d "{\"chat_id\":\"7361053689\",\"text\":\"✅ Aiviate Blog live:\\n\\n$TITLE\\n\\n🔗 https://aiviate.de/blog/$SLUG/\\n📊 ~$WORDS Wörter\"}"
+          fi
